@@ -2,7 +2,7 @@
 <!--
  Page saved with SingleFile 
  url: https://telegram.im/lostb053
- idea and edits taken from pokurt.me
+ idea taken from pokurt.me
 -->
 
 <head>
@@ -79,6 +79,10 @@
             -webkit-text-size-adjust: none
         }
 
+        body {
+            opacity: 0;
+            transition: opacity 1s;
+        }
         *,
         *:before,
         *:after {
@@ -294,7 +298,7 @@
         }
 
         .avaimg {
-            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.1), inset 0px 0px 10px 10px rgba(0, 0, 0, 0.1)
+            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 10px 10px rgba(0, 0, 0, 0.1)
         }
 
         @media screen and (max-width:480px) {
@@ -397,7 +401,7 @@
     <link rel=canonical href=https://telegram.im/lostb053>
 </head>
 
-<body>
+<body onload="document.body.style.opacity='1'">
 
     <div id=wrapper>
 
@@ -434,3 +438,5 @@
     <div id=scrollrail-horizontal class="disabled sf-hidden" style=height:12px;border-top-width:1px></div><iframe
         style=display:none></iframe>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
